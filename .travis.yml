@@ -38,6 +38,7 @@ jobs:
       - echo "Deploying"
       deploy:
         provider: npm
+        edge: true
         email: "javier.brea@gmail.com"
         api_key: "$NPM_TOKEN"
         on:

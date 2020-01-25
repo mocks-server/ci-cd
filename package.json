@@ -2,6 +2,9 @@
   "name": "@mocks-server/ci-cd",
   "private": true,
   "scripts": {
-    "test": "echo OK"
+    "test": "echo \"test OK\"",
+    "test:ci": "echo \"test:ci OK\"",
+    "lint": "echo \"lint OK\"",
+    "coveralls": "echo \"coveralls OK\""
   }
 }
