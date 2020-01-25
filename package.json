@@ -1,0 +1,7 @@
+{
+  "name": "@mocks-server/ci-cd",
+  "private": true,
+  "scripts": {
+    "test": "echo OK"
+  }
+}
