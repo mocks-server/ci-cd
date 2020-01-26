@@ -1,7 +1,7 @@
 version: ~> 1.0
 import:
   - source: .travis.yml
-    mode: deep_merge_append
+    mode: deep_merge_prepend
 
 jobs:
   include:
