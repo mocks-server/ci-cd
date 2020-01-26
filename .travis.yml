@@ -34,16 +34,5 @@ jobs:
         - npm run test:ci
         - sonar-scanner -Dsonar.login=${SONAR_TOKEN};
       if: env(SONAR_TOKEN) IS present
-    - stage: deploy
-      script:
-      - echo "Deploying"
-      deploy:
-        provider: npm
-        edge: true
-        email: "javier.brea@gmail.com"
-        api_key: "$NPM_TOKEN"
-        on:
-          tags: true
-        skip_cleanup: true
   allow_failures:
     - name: sonar

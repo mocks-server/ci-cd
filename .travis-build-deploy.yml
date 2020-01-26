@@ -1,0 +1,21 @@
+version: ~> 1.0
+import:
+  - source: .travis.yml
+    mode: deep_merge_append
+
+jobs:
+  include:
+    - stage: build
+      script:
+        - npm run build
+    - stage: deploy
+      script:
+        - npm run build
+      deploy:
+        provider: npm
+        edge: true
+        email: "javier.brea@gmail.com"
+        api_key: "$NPM_TOKEN"
+        on:
+          tags: true
+        skip_cleanup: true
