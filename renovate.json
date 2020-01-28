@@ -26,8 +26,10 @@
     "dependencies",
     "renovate"
   ],
-  "prHourlyLimit": 2,
-  "prConcurrentLimit": 5,
+  "prHourlyLimit": 5,
+  "prConcurrentLimit": 2,
   "rebaseStalePrs": true,
+  "timezone": "Europe/Madrid",
+  "schedule": ["after 9pm and before 5pm on every weekday", "after 9pm and before 6am on every weekend"],
   "masterIssue": true
 }
