@@ -8,7 +8,7 @@
     "automerge": false
   },
   "minor": {
-    "automerge": false
+    "automerge": true
   },
   "separateMultipleMajor": true,
   "rangeStrategy": "pin",
@@ -26,6 +26,8 @@
     "dependencies",
     "renovate"
   ],
+  "prCreation": "not-pending",
+  "stabilityDays": 3,
   "prHourlyLimit": 5,
   "prConcurrentLimit": 2,
   "rebaseStalePrs": true,
