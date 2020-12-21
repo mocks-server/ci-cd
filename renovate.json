@@ -20,10 +20,6 @@
     {
       "depTypeList": ["peerDependencies", "engines"],
       "rangeStrategy": "widen"
-    },
-    {
-      "packageNames": ["coveralls"],
-      "enabled": false
     }
   ],
   "labels": [
